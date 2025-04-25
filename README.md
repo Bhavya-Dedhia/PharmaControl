@@ -89,10 +89,10 @@ The system is intended to be used by two main roles: **Administrators** and **Ph
 ***MEDS:***
 Stores information about all medicines available in the pharmacy, including their category, current stock levels, and pricing details.
 
-**SUPPLIERS:**
+**_SUPPLIERS:_**
 Holds records of all drug suppliers who provide inventory to the pharmacy.
 
-**PURCHASE:**
+**_PURCHASE:_**
 Logs all stock acquisitions made by the pharmacy. Each purchase may involve multiple medicines and suppliers under a single order, based on a specific delivery date. It also includes manufacturing and expiry dates of the items purchased.
 
 **EMPLOYEES:**
