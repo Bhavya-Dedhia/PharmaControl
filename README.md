@@ -95,20 +95,37 @@ Holds records of all drug suppliers who provide inventory to the pharmacy.
 **_PURCHASE:_**
 Logs all stock acquisitions made by the pharmacy. Each purchase may involve multiple medicines and suppliers under a single order, based on a specific delivery date. It also includes manufacturing and expiry dates of the items purchased.
 
-**EMPLOYEES:**
+**_EMPLOYEES:_**
 Contains data on all pharmacy staff members, including Admin, Managers, and Pharmacists.
 
-**CUSTOMERS:**
+**_CUSTOMERS:_**
 Stores customer information to streamline the sales process and support efficient transaction handling.
 
-**SALES:**
+**_SALES:_**
 Tracks all sales transactions. Each record includes the invoice number, customer ID, employee ID responsible for the sale, total sale amount, and the date and time of the transaction.
 
-SALES_ITEMS:
+**_SALES_ITEMS:_**
 Details the specific medicines involved in each sale. For every transaction, it logs the invoice number, medicine ID, quantity sold, and the total cost for that item.
 
-ADMIN:
+**_ADMIN:_**
 Holds the Admin’s login credentials, including employee ID, username, and password. This table contains only one record, used exclusively to perform Admin-level tasks.
 
-EMPLOGIN:
+**_EMPLOGIN:_**
 Maintains login credentials—employee ID, username, and password—for all Pharmacists and Managers (excluding Admin). These records grant access to pharmacist-specific functionalities.
+
+### ER Diagram
+
+
+
+### Relational Database Model
+
+
+
+## Additional Information
+- Refer to the triggers, procedures, and functions for a deeper understanding.
+- When adding a new employee, their login credentials can only be updated via the database server.
+- Admin login details can only be modified through the database server.
+- For significant modifications, please create an issue to discuss the proposed changes beforehand.
+
+_**Don’t hesitate to reach out if you have any further questions.**_
+
