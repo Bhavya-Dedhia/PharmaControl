@@ -1,62 +1,114 @@
 # PharmaControl
+This project is designed to support pharmacies in effectively handling their inventory, managing information related to customers, employees, and suppliers, and monitoring all purchase and sales activities. It is a web-based platform built using PHP for server-side development and MySQL as the database system. The front-end interface is created using HTML5, CSS3, and JavaScript to ensure an interactive and user-friendly experience.
 
-<h2>Introduction</h2>
+## Introduction
 
-# A
+**PharmaControl** is a **Pharmacy Management System** designed to streamline the management and organization of pharmaceutical store operations by enhancing efficiency, precision, and data security.
 
-## AA
+Traditionally, pharmacies have relied on manual processes to track medicine inventory, handle supplier and customer details, manage employee information, and record purchases and sales. This approach often makes it difficult to monitor stock levels, locate specific drugs, and maintain accurate records, leading to delays and potential errors.
 
+PharmaControl offers a comprehensive digital solution that simplifies inventory tracking, transaction management, supplier coordination, and employee oversight. It also helps keep detailed and secure records of customers and all business activities.
 
-Pharmacia, a Pharmacy Management System aims to help in maintaining and managing the records for a pharmaceutical store by improving efficiency, accuracy and security.
+By replacing outdated manual methods, the system saves time and resources, enables quick access to medicines, and ensures better data integrity. PharmaControl supports pharmacies in managing their daily operations more smoothly, efficiently, and effectively.
 
-Pharmacies need to maintain details of medicine stock, suppliers, employees, customers, any stock purchased by the pharmacy and any sales made by the pharmacy. The previous manual methods require the pharmacists to manually monitor all the records lists and transactions and to verify the presence of the each drug in the pharmacy. Searching for any required drug may be difficult.
+## Objective
 
-Using the Pharmacy Management System, one can maintain stock and inventory, oversee transactions, manage suppliers and employees and maintains records of its customers. The system will help prevent waste of time and resources, allow easy access to medicines, as well as ensure more security and reliability for the data compared to the manual systems. The system assists the pharmacy in handling the daily requirements in a smoother, better and effective manner.
+The key features and objectives of the system include:
+- User-friendly interface for smooth operation
+- Automation of routine tasks to enhance efficiency
+- Quick and efficient search functionality
+- Optimal use of time and resources through digital transformation
+- Ability to generate timely alerts and detailed reports related to sales and medication stock
 
-<h3>Outputs</h3>
+## System Users
+The system is intended to be used by two main roles: **Administrators** and **Pharmacists**.
 
-Admin Login Page
+### Admin Privileges:
+- View and manage the inventory of available medicines
+- Add, edit, or update information related to drug suppliers
+- Record and update details of newly purchased stock
+- Maintain and edit employee information
+- Manage customer records and update their details
+- Monitor and review all sales transactions
+- Generate and access reports based on system data
+
+### Outputs
+
+#### Admin Login Page
 ![image](https://github.com/user-attachments/assets/f2d0241a-eef8-4acd-aea9-91ffc97a775f)
 
-Admin DashBoard
+#### Admin DashBoard
 ![image](https://github.com/user-attachments/assets/d61f4a8b-49f5-46e4-93bd-a0249c657210)
 
-Medicine Inventory
+#### Medicine Inventory
 ![image](https://github.com/user-attachments/assets/e351a804-adab-4ce2-b340-39119822e954)
 
-Suppliers List
+#### Suppliers List
 ![image](https://github.com/user-attachments/assets/6c5316c1-7df3-4140-99b4-7fe11d159bf2)
 
-Stock Purchase List
+#### Stock Purchase List
 ![image](https://github.com/user-attachments/assets/d7a2e87e-7e07-45bc-a99e-9499d2f9558e)
 
-Employee List
+#### Employee List
 ![image](https://github.com/user-attachments/assets/84a66bf7-3adc-4b90-8d3a-15be2be03669)
 
-Products Sales List
+#### Products Sales List
 ![image](https://github.com/user-attachments/assets/de5a7556-9a90-4706-b1d0-56d32db71261)
 
-Stock Reports
+#### Stock Reports
 ![image](https://github.com/user-attachments/assets/ad1f30c0-65ca-435e-a378-73eb6d8dd90e)
 
-Transaction Reports
+#### Transaction Reports
 ![image](https://github.com/user-attachments/assets/e8dc5d34-7aa7-4696-806d-f21a1a9252e3)
 
-<br><br>
+### Pharmacist Capabilities:
+- View the medicine inventory along with details such as price, quantity, and specifications (read-only access)
+- Access limited information about existing customers
+- Register new customers into the system
+- Process new sales and record transaction details in the database
 
-Pharmacist Login Page
+### Outputs
+
+#### Pharmacist Login Page
 ![image](https://github.com/user-attachments/assets/ab453814-d8e6-48b4-a3ef-590665e00b4c)
 
-Pharmacist DashBoard
+#### Pharmacist DashBoard
 ![image](https://github.com/user-attachments/assets/84e1e386-4f96-4b68-8d63-7d15deb36bba)
 
-Pharmacist - Inventory Page
+#### Pharmacist - Inventory Page
 ![image](https://github.com/user-attachments/assets/fef9ba31-c6b6-494e-aee7-61de7761ef56)
 
-Pharmacist - Customer List
+#### Pharmacist - Customer List
 ![image](https://github.com/user-attachments/assets/cd08e7f2-8cd1-46e4-b862-f5ca9496640c)
 
-Pharmacist - Add New Customer
+#### Pharmacist - Add New Customer
 ![image](https://github.com/user-attachments/assets/5ad263e5-c2f6-4fdd-9b87-67b7ae31f674)
 
+## Database Architecture
 
+***MEDS:***
+Stores information about all medicines available in the pharmacy, including their category, current stock levels, and pricing details.
+
+**SUPPLIERS:**
+Holds records of all drug suppliers who provide inventory to the pharmacy.
+
+**PURCHASE:**
+Logs all stock acquisitions made by the pharmacy. Each purchase may involve multiple medicines and suppliers under a single order, based on a specific delivery date. It also includes manufacturing and expiry dates of the items purchased.
+
+**EMPLOYEES:**
+Contains data on all pharmacy staff members, including Admin, Managers, and Pharmacists.
+
+**CUSTOMERS:**
+Stores customer information to streamline the sales process and support efficient transaction handling.
+
+**SALES:**
+Tracks all sales transactions. Each record includes the invoice number, customer ID, employee ID responsible for the sale, total sale amount, and the date and time of the transaction.
+
+SALES_ITEMS:
+Details the specific medicines involved in each sale. For every transaction, it logs the invoice number, medicine ID, quantity sold, and the total cost for that item.
+
+ADMIN:
+Holds the Admin’s login credentials, including employee ID, username, and password. This table contains only one record, used exclusively to perform Admin-level tasks.
+
+EMPLOGIN:
+Maintains login credentials—employee ID, username, and password—for all Pharmacists and Managers (excluding Admin). These records grant access to pharmacist-specific functionalities.
