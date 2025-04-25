@@ -2,6 +2,11 @@
 
 <h2>Introduction</h2>
 
+# A
+
+## AA
+
+
 Pharmacia, a Pharmacy Management System aims to help in maintaining and managing the records for a pharmaceutical store by improving efficiency, accuracy and security.
 
 Pharmacies need to maintain details of medicine stock, suppliers, employees, customers, any stock purchased by the pharmacy and any sales made by the pharmacy. The previous manual methods require the pharmacists to manually monitor all the records lists and transactions and to verify the presence of the each drug in the pharmacy. Searching for any required drug may be difficult.
