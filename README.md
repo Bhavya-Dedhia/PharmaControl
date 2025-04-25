@@ -11,7 +11,7 @@ Using the Pharmacy Management System, one can maintain stock and inventory, over
 <h3>Outputs</h3>
 
 Admin Login Page
-![image](https://github.com/user-attachments/assets/9a0d3d13-af8b-4fc4-98ac-9a10823830a3)
+![image](https://github.com/user-attachments/assets/f2d0241a-eef8-4acd-aea9-91ffc97a775f)
 
 Admin DashBoard
 ![image](https://github.com/user-attachments/assets/d61f4a8b-49f5-46e4-93bd-a0249c657210)
@@ -37,10 +37,10 @@ Stock Reports
 Transaction Reports
 ![image](https://github.com/user-attachments/assets/e8dc5d34-7aa7-4696-806d-f21a1a9252e3)
 
-
+<br><br>
 
 Pharmacist Login Page
-![image](https://github.com/user-attachments/assets/29c1c4b6-ef60-4c9d-96d8-089b1ee878fb)
+![image](https://github.com/user-attachments/assets/ab453814-d8e6-48b4-a3ef-590665e00b4c)
 
 Pharmacist DashBoard
 ![image](https://github.com/user-attachments/assets/84e1e386-4f96-4b68-8d63-7d15deb36bba)
