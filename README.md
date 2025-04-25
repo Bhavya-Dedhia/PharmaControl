@@ -113,6 +113,9 @@ Holds the Admin’s login credentials, including employee ID, username, and pass
 **_EMPLOGIN:_**
 Maintains login credentials—employee ID, username, and password—for all Pharmacists and Managers (excluding Admin). These records grant access to pharmacist-specific functionalities.
 
+#### PHPMyAdmin Database
+![PHPMyAdmin Database](https://github.com/user-attachments/assets/fe4a29e1-0584-4318-8473-aeabba1bf46d)
+
 ### ER Diagram
 ![PharmaControl - ER Diagram](https://github.com/user-attachments/assets/2ad48d4d-5304-402c-bf7f-76953ffe14b6)
 
