@@ -115,11 +115,11 @@ Maintains login credentials—employee ID, username, and password—for all Phar
 
 ### ER Diagram
 
+![PharmaControl - ER Diagram](https://github.com/user-attachments/assets/2ad48d4d-5304-402c-bf7f-76953ffe14b6)
 
 
 ### Relational Database Model
-
-
+![PharmaControl - Relational Model Diagram](https://github.com/user-attachments/assets/f0d564a1-4659-408e-a928-951edd551c65)
 
 ## Additional Information
 - Refer to the triggers, procedures, and functions for a deeper understanding.
